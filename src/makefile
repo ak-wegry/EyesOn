@@ -1,7 +1,7 @@
 CFLAGS = -P -tW -c -w-8004 -w-8027 -w-8057 -w-8012
-CC = cc $(CFLAGS)
+CC = bcc32 $(CFLAGS)
 LFLAGS = -tW
-LINK = cc -e$(EXEC) $(LFLAGS)
+LINK = bcc32 -e$(EXEC) $(LFLAGS)
 RCC = brc32
 
 EXEC = EyesOn.exe
